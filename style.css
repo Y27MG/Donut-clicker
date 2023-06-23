@@ -1,0 +1,317 @@
+:root{
+    --color: #ff590a;
+    }
+
+
+body{
+    background-color: rgb(211, 195, 177);
+    }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:max-content;
+    background-color: #ecb895;
+    }
+
+
+    li a {
+    display: block;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+
+
+  /* Change the link color on hover */
+    li a:hover {
+    background-color: #ff590a;
+    color: rgb(0, 0, 0);
+    }
+
+
+.pictures-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+
+
+donut.png{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: 0%;
+    }
+
+
+    #chocodonut{
+        margin-top: 50px;
+    }
+    #donutText{
+        margin-top: 90px;
+    }
+
+
+fruit.donut.png{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: 0%;
+    }
+
+/* Heading */
+
+h1 {
+    color: #4e2c1c;
+    text-align: center;
+    font-style: normal;
+    }
+
+
+p{
+    color: #000000;
+    text-align: center;
+    font-style: normal;
+    text-decoration-thickness: 60px;
+    }
+
+/* Buttons */
+#buttonAline{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-style: italic;
+    }
+
+
+#makeDonut{
+    font-size: xx-large;
+    font-style:oblique;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background: #ff590a;
+    cursor: pointer;
+    }
+
+
+#buyAcButton{
+    font-size: x-large;
+    font-style:oblique;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background: var(--color);
+    cursor: pointer;
+    }
+
+
+#reset{
+    font-size: larger;
+    font-style:oblique;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background:#ff590a;
+    cursor: pointer;
+    }
+
+/* popups */
+
+.popup1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.3);
+    transition: opacity 0.8 ease;
+    z-index: 1;
+    }
+
+
+.popup1.show{
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+
+.popup2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0%;
+    left: 0%;
+    height: auto;
+    width: auto;
+    background-color: white;
+    transition: opacity 0.8 ease;
+    z-index: 1;
+    }
+
+
+.popup2.show{
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+
+    .popup3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+        top: 0%;
+        left: 0%;
+        height: 50vh;
+        width: 50vw;
+        background-color: white;
+        transition: opacity 0.8 ease;
+        z-index: 1;
+        }
+
+
+        .popup3.show{
+        opacity: 1;
+        pointer-events: auto;
+        }
+
+
+
+
+/* popup2 */
+#networks{
+    color: black;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    margin: 20px;
+    }
+
+
+#closeNet{
+        font-size: small;
+        font-weight: bolder;
+        font-style:oblique; 
+        padding: 0.5em 1em;
+        margin: 0.25em;
+        border-radius: 1em;
+        border: none;
+        outline: none;
+        background:#ff590a;
+        cursor: pointer;;
+        cursor: pointer;
+    }
+
+
+    /* endpop2 */
+
+
+#popup2{
+    color: black;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+
+    #howtoplay{
+        color: black;
+        background-color: white;
+        padding: 30px 50px;
+        border-radius: 5px;
+        width: 600px;
+        max-width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+
+    #closeInfo{
+        font-size: small;
+        font-weight: bolder;
+        font-style:oblique; 
+        padding: 0.5em 1em;
+        margin: 0.25em;
+        border-radius: 1em;
+        border: none;
+        outline: none;
+        background:#ff590a;
+        cursor: pointer;;
+        cursor: pointer;
+    }
+
+
+    #popup3{
+        color: black;
+        background-color: white;
+        padding: 30px 50px;
+        border-radius: 5px;
+        width: 600px;
+        max-width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+
+#about{
+    color: black;
+        background-color: rgb(248, 247, 247);
+        padding: 30px 50px;
+        border-radius: 5px;
+        width: 600px;
+        max-width: 100%;
+        text-align: center;
+        margin: 20px;
+}
+
+
+#close{
+    font-size: small;
+    font-weight: bolder;
+    font-style:oblique; 
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background:#ff590a;
+    cursor: pointer;;
+    cursor: pointer;
+}
+

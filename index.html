@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donut Clicker</title>
+</head>
+
+
+<body onload="gameState()">
+</section>
+    <nav class="navigation">
+        <div class="dropdown">
+            <ul class="goto">
+                <li><a href="#about"><p onclick="openpopup3()">About Us</p></a></li>
+                <li><a href="#networks"><p onclick="openpopup2()">Network</p></a></li>
+                <li><a href="#howtoplay"><p onclick="openpopup1()">HOW TO PLAY ?</p></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <h1>CLICKY CLACKY THINGY</h1>
+
+
+<!-- Donut pictures -->
+<div class="pictures-row">
+    
+    
+
+</div>
+
+
+
+<div id="buttonAline">
+<div id="chocodonut">
+    <img src="cho.donut.png"> 
+    </div>
+
+    <div id="donutText">
+        <p>Donuts:</p>
+        <p id="donut-text">0</p>
+        <p id="cost-of-auto-donut-text" >Cost of Auto Clicker</p><br>
+        <p id="autoClickerPrice">0</p>
+        <p>Number of AutoClickers</p>
+        <p id="numOfAc">0</p>
+        
+    </div>
+    <div>
+    <img src="fruit.donut.png">
+</div>
+
+
+    <!-- buttons buy,helper,restart -->
+</div>
+<div id="buttons">   
+    <button id="makeDonut" onclick="makeDonut()">Make Donut</button>
+    <button id="buyAcButton" onclick="buyAutoDonut()" disabled>Buy Auto-Clicker</button>
+    <button id="reset"       onclick="location.reload()">RESET</button>
+</div>
+
+
+
+<!-- menu section for pop ups -->
+
+
+<div class="popup1" id="popup1">
+    <div id="howtoplay">
+        <h1>HOW TO PLAY</h1>
+        <p>To earn more resources, you need to click "MAKE DONUT" on the screen.
+            Each click generates a specific amount of resources,  which contributes to your overall progress in the game.</p>
+
+            <button id="closeInfo" onclick="closepopup1()">CLOSE</button>
+    </div>
+</div>
+
+
+    <!-- popup2 -->
+    <div class="popup2" id="popup2">
+        <div id="netwoks">
+            <h1>Links for Networks</h1>
+            <a href="https://github.com/Y27MG">
+            <img src="github_PNG58.png"></a>
+            <button id="closeNet"onclick="closepopup2()">CLOSE</button>
+            
+        </div>
+    </div>
+    <!-- popup2 -->
+
+    <div class="popup3" id="popup3">
+    <div id="About">
+        <h1>About Us</h1> 
+        <a href="https://orteil.dashnet.org/cookieclicker/"><p>Recently, I stumbled upon a source of inspiration that sparked my creativity and passion. 
+            It led me to the exciting endeavor of creating a cookie clicker game. The idea captivated 
+            my imagination as I envisioned a world where players could immerse themselves in the addictive 
+            joy of clicking cookies and building their own cookie empire. This newfound inspiration has 
+            motivated me to embark on this project with enthusiasm, dedicating my time and effort to bring
+            the delightful experience of baking virtual cookies to life in an engaging and entertaining way.</p></a>
+        
+
+            <button id="close"onclick="closepopup3()">CLOSE</button>
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+    <script src="app.js">
+        
+// var donuts = 0;
+// var dpc = 1;
+// var dps = 0;
+// var costOfAutoDonut = 100;
+// var developmentmode = true;
+// if(developmentmode === true) {
+//     donuts = 100;
+// }
+
+
+// function makeDonut() {
+//     donuts += dpc;
+//     document.getElementById('donut-text').innerHTML = "Donuts: " + donuts;
+
+// }
+
+
+// function buyAutoDonut() {
+//     if(donuts >= costOfAutoDonut) {
+//         dpc += 1;
+//         donuts -= costOfAutoDonut;
+//         costOfAutoDonut = Math.round (costOfAutoDonut * 1.1);
+//         document.getElementById('donut-text').innerHTML = "Donuts: " + donuts;
+//         document.getElementById('cost-of-auto-donut-text').innerHTML = "Cost Of Auto Donut: " + costOfAutoDonut;
+//     } else {
+//         alert("Make more dough!")
+//     }
+// }
+
+
+// function autoDonutClick() {
+//     if(donuts >- 50) {
+//         donuts -= 50;
+//         dps += 1;
+// document.getElementById('auto-donut-click-text').innerHTML = "Auto Donut Click " + autoDonutClick;
+
+//     }
+// }
+
+
+// setInterval(function() {
+//     donuts += dps;
+//     document.getElementById('donut-text').innerHTML = "Donuts: " + donuts;
+
+
+// }, 1000)
+
+
+    </script>
+
+
+</body>
+</html>
